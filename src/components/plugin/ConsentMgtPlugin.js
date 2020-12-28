@@ -5,8 +5,7 @@ const ConsentMgtPlugin = () => {
   const [view, setView] = useState(true);
   const [isAccepted, setIsAccepted] = useState(false);
 
-  const disableGoogleScript = (trackingId="trackingId") => {
-
+  const disableGoogleScript = (trackingId = "trackingId") => {
     //disable google analytis script on the page if the propertyID is provided
     if (trackingId) {
       window[`ga-disable-${trackingId}`] = true;
@@ -51,14 +50,13 @@ const ConsentMgtPlugin = () => {
             </div>
           </div>
         ) : (
-          <div className="view">
-            
-            <div className="view_navigation">
+          <div className="reject-consent-view">
+            <div className="reject-consent-view_btn">
               <span onClick={goBackToPrevView}>&#x2190;</span>
             </div>
-            hsadhjjasdhjajkdbc m chcbz zbx e Analytics tag to get some
-            information about the users, use any of the below buttons to either
-            accept or opt-out of the Google Analytics measurement.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, eius
+            delectus consectetur ipsa voluptas maxime eligendi consequuntur
+            provident error eum.
           </div>
         )}
       </div>
