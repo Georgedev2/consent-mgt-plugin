@@ -7,7 +7,7 @@ This module (Consent Management Plugin) was bootstrapped with create-react-app.
 STEP:1 First clone the project using the command:
 
 ```
-git clone https://github.com/Georgedev2/my-portfolio-site-code.git 
+git clone https://github.com/Georgedev2/consent-mgt-plugin.git
 ```
 STEP:2 Install the dependencies using the below command:
 
