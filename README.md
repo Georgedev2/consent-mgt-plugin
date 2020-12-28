@@ -4,19 +4,17 @@ This module (Consent Management Plugin) was bootstrapped with create-react-app.
 
 ## To Run the app locally
 
-###  STEP:1 First clone the project using the command:
+STEP:1 First clone the project using the command:
 
 ```
 git clone https://github.com/Georgedev2/my-portfolio-site-code.git 
 ```
-
-###  STEP:2 Install the dependencies using the below command:
+STEP:2 Install the dependencies using the below command:
 
 ```
 npm install
 ```
-
- ### STEP:4 If every thing went well and all the dependencies are install, then run:
+STEP:4 If every thing went well and all the dependencies are install, then run:
 
 ```
 npm start
