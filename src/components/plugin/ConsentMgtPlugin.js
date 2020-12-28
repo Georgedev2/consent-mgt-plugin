@@ -5,26 +5,26 @@ const ConsentMgtPlugin = () => {
   const [view, setView] = useState(true);
   const [isAccepted, setIsAccepted] = useState(false);
 
-  const disableGoogleScript = (trackingId = "trackingId") => {
-    //disable google analytis script on the page if the propertyID is provided
+  //This function disable google analytis script on the page if the trackingId is provided  to the component.
+  const disableGoogleScript = (trackingId) => {
     if (trackingId) {
       window[`ga-disable-${trackingId}`] = true;
     }
   };
 
+  // This function Take the user to a new view when he/she clicks the reject button & then disabled google analytis script on the page.
   const handleReject = () => {
-    //Take the user to a new view
     setView((preState) => !preState);
-    //Then disabled google analytis script on the page
     disableGoogleScript();
   };
 
+  // This function takes the user to previous view when the navigation button on the plugin is clicked.
   const goBackToPrevView = () => {
     setView((preState) => !preState);
   };
 
+  //This function unblock the site, allow the user the scroll and then remove the plugin.
   const handleAccept = () => {
-    // unblock the site & remove the plugin
     setIsAccepted((prevState) => !prevState);
   };
 
@@ -65,4 +65,3 @@ const ConsentMgtPlugin = () => {
 };
 
 export default ConsentMgtPlugin;
-
