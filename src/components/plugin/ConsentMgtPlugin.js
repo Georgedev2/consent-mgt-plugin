@@ -66,4 +66,3 @@ const ConsentMgtPlugin = () => {
 
 export default ConsentMgtPlugin;
 
-// reject-consent-view

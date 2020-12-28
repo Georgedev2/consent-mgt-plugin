@@ -15,7 +15,7 @@
     background-color: rgba(0, 0, 0, 0.4);
   }
 
-  .consent {
+  @mixin reuasable {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,6 +24,9 @@
     margin: auto;
     text-align: center;
     padding: 30px 0;
+  }
+  .consent {
+    @include reuasable;
 
     .btns-wrapper {
       display: flex;
@@ -49,14 +52,7 @@
   }
 
   .reject-consent-view {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding: 30px 0;
+    @include reuasable;
     position: relative;
 
     .reject-consent-view_btn {
@@ -73,4 +69,3 @@
     }
   }
 }
-
