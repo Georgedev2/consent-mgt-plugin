@@ -35,10 +35,10 @@ const ConsentMgtPlugin = () => {
         {view ? (
           <div className="consent">
             <div>
-              This site's privacy policy include the use of Google Analytics tag
-              to get some information about the users, use any of the below
-              buttons to either accept or opt-out of the Google Analytics
-              measurement.
+              If you click "Accept", we will analyze how you use our site with
+              help from Survicate, Google Analytics and Google Optimize. This
+              helps us to better understand how our site is used and how to
+              optimize it. You can withdraw your consent at any time. 
             </div>
             <div className="btns-wrapper">
               <div className="accept-btn" onClick={handleAccept}>
