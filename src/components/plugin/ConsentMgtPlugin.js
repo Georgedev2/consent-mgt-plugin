@@ -5,14 +5,14 @@ const ConsentMgtPlugin = () => {
   const [view, setView] = useState(true);
   const [isAccepted, setIsAccepted] = useState(false);
 
-  //This function disable google analytis script on the page if the trackingId is provided  to the component.
+  //This function disable google analytics script on the page, if the trackingId is provided  to the component.
   const disableGoogleScript = (trackingId) => {
     if (trackingId) {
       window[`ga-disable-${trackingId}`] = true;
     }
   };
 
-  // This function Take the user to a new view when he/she clicks the reject button & then disabled google analytis script on the page.
+  // This function Take the user to a new view when he/she clicks the reject button & then disabled google analytics script on the page.
   const handleReject = () => {
     setView((preState) => !preState);
     disableGoogleScript();
