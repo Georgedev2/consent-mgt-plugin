@@ -1,7 +1,6 @@
 # Consent Management Plugin
 
 This module (Consent Management Plugin) was bootstrapped with create-react-app.
-
 The module is a responsive consent management plugin or module that show a simple box over a website. 
 
 The module or plugin when displayed stop scrolling and click interactions on the website until the accept button is on the plugin is clicked.
