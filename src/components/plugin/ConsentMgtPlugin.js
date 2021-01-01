@@ -54,9 +54,11 @@ const ConsentMgtPlugin = () => {
             <div className="reject-consent-view_btn">
               <span onClick={goBackToPrevView}>&#x2190;</span>
             </div>
+            <div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, eius
             delectus consectetur ipsa voluptas maxime eligendi consequuntur
             provident error eum.
+            </div>
           </div>
         )}
       </div>
